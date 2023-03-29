@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remont</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <a href="#" class="logo">REMONT</a>
+            <nav class="header__navigation">
+                <ul class="header__nav">
+                    <li class="header__item"><a class="header__link header__link__menu" id="menu" onclick="openModal()" href="#">МЕНЮ</a></li>
+                    <li class="header__item"><a class="header__link" href="#">ПОРТФОЛИО</a></li>
+                    <li class="header__item"><a class="header__link" href="#">ЦЕНЫ</a></li>
+                    <li class="header__item"><a class="header__link" href="#">СХЕМА РАБОТЫ</a></li>
+                    <li class="header__item"><a class="header__link" href="#">ОТЗЫВЫ</a></li>
+                    <li class="header__item"><a class="header__link" href="#">КОНТАКТЫ</a></li>
+                    <li class="header__item"><a class="header__link" href="#">ГАРАНТИЯ</a></li>
+                </ul>
+            </nav>
+            <a class="modal__menu" onclick="openModal()" href="#"></a>
+            <a class="modal2__menu" href="#" onclick="openModall()"></a>  
+            <a class="header__tel" href="#">ОБРАТНЫЙ ЗВОНОК</a>
+            <a class="header__tel_img" href="#"></a>
+        </header>
+        <main class = "price">
+                <img class="price__fon element-animation" src="./img/Rectangle.png" alt="Мебель">
+                <div class="container">
+                    <div class = "price__flex">
+                        <div class="price__text">
+                            <h1 class="price__head element-animation">Ремонт под ключ от 2900&nbspруб/м<sup>2</sup>.</h1>
+                            <p class="price__underhead element-animation">При заказе ремонта делаем дизайн-проект в подарок</p>
+                            <div class="price__grid element-animation">
+                                <p class="price__item price__item__car">Бесплатный выезд в день обращения</p>
+                                <p class="price__item price__item__medal">Гарантия на работу до 5&nbspлет</p>
+                                <p class="price__item price__item__man">Жесткое соблюдение сроков</p>
+                            </div>
+                        </div>
+                        <div class="price__content element-animation">
+                            <div class="price__content__container">
+                                <h1 class="price__content__head">Рассчитайте стоимость ремонта</h1>
+                                <div class="price__content__flex">
+                                    <p class="price__content__span">ПЛОЩАДЬ КВАРТИРЫ:</p>
+                                    <div><h2 class="price__content__metr" id="rangeValue">30</h2><span class="price__content__metr">м<sup class="price__content__sup">2</sup></span></div>
+                                </div>
+                                <input type="range" class="price__content__range" name="" value="30" min="30" max="150" onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
+                                <form class="price__content__form">
+                                    <label class="price__content__label" for="">ТИП ЖИЛЬЯ:</label>
+                                    <div class="price__content__flex price__content__flex__mt">
+                                        <div class="price__content__form_radio">
+                                            <input class="price__content__radio" id="radio-1" type="radio" name="typehouse" checked>
+                                            <label for="radio-1" class="price__content__radio__label__1 price__content__radio__label">Вторичное жилье</label>
+                                        </div>
+                                        <div class="price__content__form_radio">
+                                            <input class="price__content__radio" id="radio-2" type="radio" name="typehouse">
+                                            <label for="radio-2" class="price__content__radio__label__2 price__content__radio__label">Новостройка</label>
+                                        </div>
+                                        <div class="price__content__form_radio">
+                                            <input class="price__content__radio" id="radio-3" type="radio" name="typehouse">
+                                            <label for="radio-3" class="price__content__radio__label price__content__radio__label__3">Офис</label>
+                                        </div>
+                                    </div>
+                                    <label class="price__content__label price__content__label__2" for="">КОЛ-ВО КОМНАТ:</label>
+                                    <div class="price__content__flex price__content__flex__mt">
+                                        <div class="price__content__form_radio">
+                                            <input id="radio-4" class="price__content__radio" type="radio" name="countroom">
+                                            <label for="radio-4" class="price__content__radio__label price__content__radio__label__4" >1</label>
+                                        </div>
+                                        <div class="price__content__form_radio">
+                                            <input id="radio-5" class="price__content__radio" type="radio" name="countroom">
+                                            <label for="radio-5" class="price__content__radio__label price__content__radio__label__5">2</label>
+                                        </div>
+                                        <div class="price__content__form_radio">
+                                            <input id="radio-6" class="price__content__radio" type="radio" name="countroom">
+                                            <label for="radio-6" class="price__content__radio__label price__content__radio__label__6">3+</label>
+                                        </div>
+                                        <div class="price__content__form_radio">
+                                            <input id="radio-7" class="price__content__radio" type="radio" name="countroom">
+                                            <label for="radio-7" class="price__content__radio__label price__content__radio__label__7">Студия</label>
+                                        </div>
+                                    </div>
+                                    <input class="price__content__button" type="submit" value="ОТПРАВИТЬ">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <a href="#" class="logo">REMONT</a>
+                <nav class="footer__navigation">
+                    <ul class="footer__nav">
+                        <li class="footer__item"><a class="footer__link" href="#">ПОРТФОЛИО</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">ЦЕНЫ</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">СХЕМА РАБОТЫ</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">ОТЗЫВЫ</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">КОНТАКТЫ</a></li>
+                        <li class="footer__item"><a class="footer__link" href="#">ГАРАНТИЯ</a></li>
+                    </ul>
+                </nav>  
+                <a class="footer__tel" href="#">ОБРАТНЫЙ ЗВОНОК</a>
+            </div>
+            <div class="footer__text footer">
+                <p class="footer__copy">&copy; 2023, Все права защищены</p>
+                <p class="footer__author-text">Сделано в рамках ТЗ от компании Agrachoff GROUP</p>
+            </div>
+        </footer>
+    </div>
+    <div id="modal" class="modal">
+        <div class="header__navigation modal__navigation">
+            <ul class="header__nav modal__nav">
+                <li class="header__item modal__item">
+                    <a href="#" class="header__link modal__link scroll">Услуги</a>
+                </li>
+                <li class="header__item modal__item">
+                    <a href="#" class="header__link modal__link scroll">Статьи</a>
+                </li>
+                <li class="header__item modal__item">
+                    <a href="#" class="header__link modal__link scroll">Вакансии</a>
+                </li>
+                <li class="header__item modal__item">
+                    <a href="#" class="header__link modal__link scroll">Франшиза</a>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__close" onclick="closeModal()"></button>
+    </div>
+    <div id="modal2" class="modal modal2">
+        <div class="header__navigation modal__navigation">
+            <ul class="header__nav modal__nav">
+                <li class="header__item modal__item modal2__item">
+                    <a href="#" class="header__link modal__link scroll">ПОРТФОЛИО</a>
+                </li>
+                <li class="header__item modal__item modal2__item">
+                    <a href="#" class="header__link modal__link scroll">ЦЕНЫ</a>
+                </li>
+                <li class="header__item modal__item modal2__item">
+                    <a href="#" class="header__link modal__link scroll">СХЕМА РАБОТЫ</a>
+                </li>
+                <li class="header__item modal__item modal2__item">
+                    <a href="#" class="header__link modal__link scroll">ОТЗЫВЫ</a>
+                </li>
+                <li class="header__item modal__item modal2__item">
+                    <a href="#" class="header__link modal__link scroll">КОНТАКТЫ</a>
+                </li>
+                <li class="header__item modal__item modal2__item">
+                    <a href="#" class="header__link modal__link scroll">ГАРАНТИЯ</a>
+                </li>
+            </ul>
+        </div>
+        <button class="modal__close modal2__close" onclick="closeModall()"></button>
+    </div>
+    <script type="text/javascript">
+        function rangeSlider(value)
+        {
+            document.getElementById('rangeValue').innerHTML = value;
+        }
+        function openModal() 
+        {
+            document.getElementById("modal").style.top = "63px";
+        }
+    
+        function closeModal() 
+        {
+            document.getElementById("modal").style.top = "-460px";
+        }
+        function openModall() 
+        {
+            document.getElementById("modal2").style.top = "0px";
+        }
+    
+        function closeModall() 
+        {
+            document.getElementById("modal2").style.top = "-460px";
+        }
+        function onEntry(entry) {
+            entry.forEach(change => {
+              if (change.isIntersecting) 
+            {
+               change.target.classList.add('element-show');
+            }
+               else
+            {
+               change.target.classList.remove('element-show');
+            }
+              
+            });
+          }
+          
+          let options = {
+            threshold: [0.5] };
+          let observer = new IntersectionObserver(onEntry, options);
+          let elements = document.querySelectorAll('.element-animation');
+          
+          for (let elm of elements) {
+            observer.observe(elm);
+          }
+    </script>  
+</body>
+
+</html>
